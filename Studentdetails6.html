@@ -1,0 +1,224 @@
+<html>
+<head>
+<title>Student Details</title>
+
+<meta charset="utf-8">
+
+<style type="text/css">
+h1{
+ padding:20px;
+ font-size:50px;
+ margin:5px;
+}
+table{
+ font-size:20px;
+
+ margin-top:-140px;
+ margin-left:45px;
+ margin-rignt:0px;
+ font-family: Calibri; 
+ font-style: normal;
+ font-weight: bold; 
+ border-collapse: collapse; 
+ background-color:white;
+ font-weight:bold;
+ width:400px;
+}
+.setwidth{
+ min-height:70px;
+ min-width:70px;
+ font-size:19px;
+}
+body{
+ align:center;
+ background-image:url("a.jpg");
+ background-repeat:no-repeat;
+ background-position:top-right;
+ background-attachment:fixed;
+ background-size: 3500px 3500px;
+ }
+.heading{
+ padding:25px;
+ 
+ align:center;
+
+ }
+ table.center {
+    margin-left:auto; 
+    margin-right:auto;
+    width:900px;
+  }
+
+body,input{
+ font-size:18px;
+ color:green;
+ align:center;
+ }
+</style>
+</head>
+<body>
+<div class="heading">
+<h1 style="font-size:35px;color:blue;text-align:center;"><b>STUDENT DETAILS<b></h1>
+<hr style="align:center;color:lightgreen;">
+</div>
+<form  action="studentdetails.php"  method="POST">
+<table  class="center"  cellpadding="10" >
+<tr>
+<td style="color:blue;font-size:25px;"><b>PERSONAL INFORMATION:<b></td>
+</tr>
+<tr>
+ <td>FIRST NAME  :</td>
+ <td><input type="text"name="fname" required=""></td>
+</tr>
+<tr>
+ <td>LAST NAME  :</td>
+ <td><input type="text"name="lname" required=""></td>
+</tr>
+<tr>
+ <td>DATE OF BIRTH  :</td>
+ <td><input type="date"name="dob" required=""></td>
+</tr>
+<tr>
+ <td>GENDER :</td>
+ <td><input type="radio"name="gender" value="male"style="width:30px;height:20px;" required="">Male
+     <input type="radio"name="gender" value="female"style="width:30px;height:20px;" required="">Female
+     <input type="radio"name="gender" value="other"style="width:30px;height:20px;" required="">other<br>
+  </td>
+</tr>
+<tr>
+  <td>E-MAIL  :</td>
+  <td><input type="email"name="email" required=""></td>
+</tr>
+<tr>
+ <td>CONTACT NUMBER :</td>
+ <td><input type="tel"name="phone" required=""></td>
+ 
+</tr>
+<tr>
+ <td>BOARDING POINT:</td>
+ <td><input type="radio"name="boardingpoint" value="Hosteler"style="width:30px;height:20px;" required="">Hosteler<br>
+      <input type="radio"name="boardingpoint" value="dayscolar"style="width:30px;height:20px;" required="">Dayscholar</td>
+</tr>      
+<tr>
+ <td>ADDRESS:</td>
+ <td><input type="textarea" row="3" column="30" name="address"></td>
+</tr>
+
+<tr>
+ <td>CITY:</td><br>
+ <td><input type="text" name="city"></td>
+</tr>
+<tr>
+ <td>DISTRICT:</td><br>
+ <td><input type="text" name="district"></td>
+</tr>
+<tr>
+ <td>STATE:</td><br>
+ <td><input type="text" name="state"></td>
+</tr>
+<tr>
+ <td>PINCODE</td><br>
+ <td><input type="number" name="pincode"></td>
+</tr>
+<tr>
+ <td style="color:blue;font-size:25px;"><b>EDUCATIONAL INFORMATION:</b></td>
+</tr>
+
+
+</td>
+</tr>
+<tr>
+ <td>NAME OF THE COLLAGE:</td>
+ <td><input type="text"name="clgname" value="Sathyabama Institute of Science of Technology" readonly></td>
+</tr>
+<tr>
+ <td>COURSE:</td>
+ <td><select name="course"style="height:50px;font-size:20px;" required="">
+	<option value="B.E" required="">B.E</option><br>
+	<option value="B.A" required="">B.A</option><br>
+	<option value="M.B.A"  required="">M.B.A</option><br>
+	<option value="B.Tech" required="">B.Tech</option><br>
+     </select>
+  <br><br>
+</td>
+<tr>
+ <td>BRANCH:</td>
+ <td><select name="branch" style="height:50px;font-size:20px;">
+	<option value="Select the Branch" required="">Select the Branch</option>
+
+	<option value="CSE" required="">CSE</option><br>
+	<option value="ECE" required="">ECE</option><br>
+	<option value="EEE" required="">EEE</option><br>
+	<option value="Mechanical" required="">Mechanical</option><br>
+	<option value="Aero" required="">Aero</option><br>
+    </select>
+</td>
+</tr>
+<tr>
+ <td>YEAR:</td>
+ <td><input type="radio"name="year"style="width:30px;height:20px;" required="">select the  Year<br>
+     <input type="radio"name="year" value="1st year"style="width:30px;height:20px;" required="">1St Year<br>
+     <input type="radio"name="year" value="2nd year"style="width:30px;height:20px;" required="">2nd Year<br>
+     <input type="radio"name="year" value="3rd year"style="width:30px;height:20px;" required="">3rd Year<br>
+     <input type="radio"name="year" value="4th year"style="width:30px;height:20px;" required="">4th Year<br>
+ </td>
+</tr>
+<tr>
+ <td>SECTION:</td>
+ <td><select name="section" style="height:50px;font-size:20px;">
+<option value="Select the section" required>Select the section</option>
+<option value="A"required="">A</option>
+<option value="B" required="">B</option>
+<option value="c" required="">C</option>
+<option value="d" required="">D</option>
+<option value="e" required="">E</option>
+<option value="f" required="">F</option>
+<option value="g" required="">G</option>
+<option value="h" required="">H</option>
+<option value="i" required="">I</option>
+<option value="j" required="">J</option>
+<option value="k" required="">K</option>
+<option value="l" required="">L</option>
+<option value="m" required="">M</option>
+<option value="n" required="">N</option>
+<option value="o" required="">O</option>
+<option value="p" required="">P</option>
+<option value="q" required="">Q</option>
+<option value="r" required="">S</option>
+<option value="s" required="">T</option>
+<option value="u" required="">U</option>
+<option value="v" required="">V</option>
+<option value="w" required="">W</option>
+<option value="X" required="">X</option>
+<option value="Y" required="">Y</option>
+<option value="Z" required="">Z</option>
+</td>
+</tr>
+<tr>
+ <td>REG NO:</td>
+ <td><input type="text" name="regno" required=""></td>
+</tr>
+
+
+
+
+<tr>
+ <td>Extra Circular Activites:</td>
+ <td><textarea name="eca" rows="10" column="20" required=""></textarea></td>
+</tr>
+
+<tr>
+ <td>If you have any participation in any event add the documents</td>
+ <td ><input type="file"name="file" style="color:blue;"></td>
+</tr>
+<tr>
+ <td colspan="2" align="left"><input type="submit" style="font-size:28px;color:blue;"></td><br>
+ <td colspan="2" align="center"><input type="Reset" style="font-size:28px;color:blue;"></td><br>
+</tr>
+
+</table>
+</form>
+
+
+</body>
+</html>
